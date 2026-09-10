@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Silo Flex | Sacos para Silagem Resistentes e Seguros</title>
+<meta name="description" content="Sacos para silagem Silo Flex: linha verde 100% reciclável e linha branca com 50% de material virgem, em 180 e 200 micra. Solicite seu orçamento pelo WhatsApp." />
+<meta property="og:title" content="Silo Flex | Sacos para Silagem Resistentes e Seguros" />
+<meta property="og:description" content="Sacos para silagem Silo Flex: linha verde 100% reciclável e linha branca com 50% de material virgem, em 180 e 200 micra. Solicite seu orçamento pelo WhatsApp." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+
+    --radius: 0.875rem;
+    --background: oklch(1 0 0);
+    --surface: oklch(0.976 0 0);
+    --foreground: oklch(0.215 0.028 155);
+    --primary: oklch(0.45 0.105 160);
+    --primary-deep: oklch(0.29 0.075 158);
+    --primary-glow: oklch(0.62 0.115 168);
+    --primary-foreground: oklch(0.985 0.008 150);
+    --secondary: oklch(0.955 0.018 158);
+    --secondary-foreground: oklch(0.31 0.062 158);
+    --muted-foreground: oklch(0.52 0.008 155);
+    --border: oklch(0.912 0 0);
+    --shadow-soft: 0 8px 24px -14px oklch(0.29 0.075 158 / 0.25);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+  img { display: block; max-width: 100%; }
+  a { text-decoration: none; color: inherit; }
+  ul { margin: 0; padding: 0; list-style: none; }
+  button { font-family: inherit; }
+
+  .wrap { margin: 0 auto; max-width: 86rem; padding: 0 1.25rem; }
+  @media (min-width: 1024px) { .wrap { padding: 0 2.5rem; } }
+
+  .eyebrow {
+    font-family: var(--font-display);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--primary);
+  }
+
+  .h2 {
+    margin-top: 1.5rem;
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--foreground);
+  }
+  @media (min-width: 640px) { .h2 { font-size: 2.25rem; } }
+  @media (min-width: 1024px) { .h2 { font-size: 3rem; } }
+
+  .lead {
+    margin-top: 2rem;
+    max-width: 42rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--muted-foreground);
+  }
+  @media (min-width: 1024px) { .lead { font-size: 1.125rem; } }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(1.5rem);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    will-change: transform, opacity;
+  }
+  .reveal.shown { opacity: 1; transform: translateY(0); }
+
+  /* ---------- WhatsApp buttons ---------- */
+  .btn-wa {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 999px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease, opacity 0.2s ease, border-color 0.2s ease;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-wa.solid { background: var(--primary); color: var(--primary-foreground); }
+  .btn-wa.solid:hover { background: var(--primary-deep); }
+  .btn-wa.light { background: var(--background); color: var(--primary); }
+  .btn-wa.light:hover { opacity: 0.9; }
+  .btn-wa.sm { padding: 0.625rem 1.25rem; font-size: 0.7rem; }
+  .btn-wa.md { padding: 0.75rem 1.5rem; font-size: 0.75rem; }
+  .btn-wa.lg { padding: 1rem 2rem; font-size: 0.85rem; }
+
+  /* ---------- Header ---------- */
+  header.site-header {
+    position: fixed;
+    inset-inline: 0;
+    top: 0;
+    z-index: 50;
+    background: var(--background);
+    transition: box-shadow 0.3s ease;
+  }
+  header.site-header.scrolled { box-shadow: var(--shadow-soft); }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  .logo-mark { display: flex; align-items: center; gap: 0.55rem; height: 2.75rem; }
+  @media (min-width: 1024px) { .logo-mark { height: 3.5rem; } }
+  .logo-mark svg { height: 100%; width: auto; }
+  .logo-mark .logo-word { font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; letter-spacing: -0.01em; }
+  @media (min-width: 1024px) { .logo-mark .logo-word { font-size: 1.4rem; } }
+
+  .nav-links { display: none; align-items: center; gap: 2rem; }
+  @media (min-width: 1024px) { .nav-links { display: flex; } }
+  .nav-links a {
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: color-mix(in oklch, var(--foreground) 70%, transparent);
+    transition: color 0.2s ease;
+  }
+  .nav-links a:hover { color: var(--primary); }
+
+  .header-right { display: flex; align-items: center; gap: 2rem; }
+  .menu-btn {
+    display: grid;
+    place-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--primary);
+    background: transparent;
+    border: none;
+  }
+  @media (min-width: 1024px) { .menu-btn { display: none; } }
+  .header-cta { display: none; }
+  @media (min-width: 640px) { .header-cta { display: inline-flex; } }
+
+  .mobile-nav {
+    display: none;
+    border-top: 1px solid var(--border);
+    background: var(--background);
+    padding: 0 1.25rem 1.5rem;
+  }
+  .mobile-nav.open { display: block; }
+  .mobile-nav a {
+    display: block;
+    border-bottom: 1px solid color-mix(in oklch, var(--border) 60%, transparent);
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: color-mix(in oklch, var(--foreground) 80%, transparent);
+  }
+  .mobile-nav .btn-wa { margin-top: 1.25rem; width: 100%; }
+
+  /* ---------- Hero ---------- */
+  #inicio { background: var(--background); padding: 7rem 0 4rem; }
+  @media (min-width: 1024px) { #inicio { padding: 10rem 0 7rem; } }
+  .hero-grid {
+    display: grid;
+    gap: 3.5rem;
+    align-items: center;
+  }
+  @media (min-width: 1024px) { .hero-grid { grid-template-columns: 1.05fr 0.95fr; gap: 5rem; } }
+
+  .hero-title {
+    margin-top: 1.75rem;
+    font-family: var(--font-display);
+    font-size: 2.4rem;
+    line-height: 1.04;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--foreground);
+  }
+  @media (min-width: 640px) { .hero-title { font-size: 3rem; } }
+  @media (min-width: 1024px) { .hero-title { font-size: 4rem; } }
+  .hero-title .accent { color: var(--primary); }
+
+  .hero-stats {
+    margin-top: 3.5rem;
+    display: flex;
+    max-width: 32rem;
+    align-items: stretch;
+    gap: 2rem;
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+  }
+  .hero-stats .stat-value {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary);
+  }
+  @media (min-width: 1024px) { .hero-stats .stat-value { font-size: 1.5rem; } }
+  .hero-stats .stat-label {
+    margin-top: 0.25rem;
+    font-size: 0.72rem;
+    line-height: 1.3;
+    color: var(--muted-foreground);
+  }
+
+  .media-frame {
+    overflow: hidden;
+    border-radius: 1.5rem;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-soft);
+  }
+  .video-16-9 { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+  .video-16-9 iframe { position: absolute; inset: 0; height: 100%; width: 100%; border: 0; }
+
+  /* ---------- Section shells ---------- */
+  section { background: var(--background); }
+  .section-pad { padding: 5rem 0; }
+  @media (min-width: 1024px) { .section-pad { padding: 7rem 0; } }
+  .surface { background: var(--surface); }
+
+  /* ---------- Products ---------- */
+  .product-list { margin-top: 4rem; display: flex; flex-direction: column; gap: 2rem; }
+  .product-card {
+    display: grid;
+    overflow: hidden;
+    border-radius: 1.75rem;
+    border: 1px solid var(--border);
+  }
+  @media (min-width: 1024px) { .product-card { grid-template-columns: 1fr 1fr; } }
+  .product-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5rem 2rem;
+  }
+  @media (min-width: 1024px) { .product-media { padding: 5rem 2rem; } }
+  .product-media.dark { background: var(--primary-deep); }
+  .product-media.light { background: var(--secondary); }
+  .product-media svg { height: 16rem; width: auto; }
+  @media (min-width: 1024px) { .product-media svg { height: 20rem; } }
+
+  .product-body { display: flex; flex-direction: column; justify-content: center; padding: 2.5rem 1.75rem; }
+  @media (min-width: 640px) { .product-body { padding: 2.5rem 3rem; } }
+  @media (min-width: 1024px) { .product-body { padding: 4rem 4rem; } }
+  .product-body h3 {
+    margin: 1rem 0 0;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--foreground);
+  }
+  @media (min-width: 1024px) { .product-body h3 { font-size: 2.25rem; } }
+  .product-body p.lead-sm { margin-top: 1.25rem; font-size: 1rem; line-height: 1.7; color: var(--muted-foreground); }
+  .feature-grid { margin-top: 2rem; display: grid; gap: 0.75rem; grid-template-columns: 1fr; }
+  @media (min-width: 640px) { .feature-grid { grid-template-columns: 1fr 1fr; } }
+  .feature-grid li {
+    border-top: 1px solid var(--border);
+    padding-top: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: color-mix(in oklch, var(--foreground) 80%, transparent);
+  }
+  .product-body .btn-wa { margin-top: 2.5rem; align-self: flex-start; }
+
+  /* ---------- About ---------- */
+  .about-grid { display: grid; gap: 3.5rem; align-items: center; }
+  @media (min-width: 1024px) { .about-grid { grid-template-columns: 1fr 1fr; gap: 5rem; } }
+  .about-media { order: 2; overflow: hidden; border-radius: 1.5rem; }
+  @media (min-width: 1024px) { .about-media { order: 1; } }
+  .about-media svg { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+  .about-copy { order: 1; }
+  @media (min-width: 1024px) { .about-copy { order: 2; } }
+  .about-copy .lead { display: flex; flex-direction: column; gap: 1.5rem; max-width: none; }
+
+  /* ---------- Differentials ---------- */
+  .diff-grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1px;
+    overflow: hidden;
+    border-radius: 1.75rem;
+    border: 1px solid var(--border);
+    background: var(--border);
+  }
+  @media (min-width: 1024px) { .diff-grid { grid-template-columns: repeat(3, 1fr); } }
+  .diff-card { background: var(--background); padding: 3rem 2rem; }
+  @media (min-width: 1024px) { .diff-card { padding: 4rem 3rem; } }
+  .diff-card .num { font-family: var(--font-display); font-size: 3rem; line-height: 1; font-weight: 800; color: var(--primary); }
+  @media (min-width: 1024px) { .diff-card .num { font-size: 3.75rem; } }
+  .diff-card h3 { margin: 2rem 0 0; font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.01em; }
+  .diff-card p { margin-top: 1rem; font-size: 0.9rem; line-height: 1.7; color: var(--muted-foreground); }
+
+  /* ---------- Sustainability ---------- */
+  #sustentabilidade { background: var(--primary-deep); color: var(--primary-foreground); }
+  .sus-grid { display: grid; gap: 3.5rem; align-items: center; }
+  @media (min-width: 1024px) { .sus-grid { grid-template-columns: 1fr 0.85fr; gap: 5rem; } }
+  #sustentabilidade .eyebrow { color: var(--primary-foreground); opacity: 0.7; }
+  #sustentabilidade .h2 { color: var(--primary-foreground); }
+  #sustentabilidade .lead { color: var(--primary-foreground); opacity: 0.85; }
+  .sus-highlight { margin-top: 2.5rem; font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.01em; }
+  @media (min-width: 1024px) { .sus-highlight { font-size: 1.875rem; } }
+  .sus-media { display: flex; justify-content: center; }
+  .sus-media svg { height: 18rem; width: auto; }
+  @media (min-width: 1024px) { .sus-media svg { height: 26rem; } }
+
+  /* ---------- Application ---------- */
+  .app-media { margin-top: 3rem; overflow: hidden; border-radius: 1.75rem; }
+  .app-media svg { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+  .app-cta {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    border-top: 1px solid var(--border);
+    padding-top: 3rem;
+  }
+  @media (min-width: 1024px) { .app-cta { flex-direction: row; align-items: center; justify-content: space-between; } }
+  .app-cta p {
+    max-width: 42rem;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--foreground);
+  }
+  @media (min-width: 1024px) { .app-cta p { font-size: 1.875rem; } }
+
+  /* ---------- Footer ---------- */
+  footer { background: var(--primary-deep); color: var(--primary-foreground); }
+  .footer-inner { padding: 5rem 0; }
+  @media (min-width: 1024px) { .footer-inner { padding: 6rem 0; } }
+  .footer-grid { display: grid; gap: 3.5rem; }
+  @media (min-width: 1024px) { .footer-grid { grid-template-columns: 1.1fr 0.9fr; } }
+  .footer-logo { display: flex; align-items: center; gap: 0.6rem; height: 3.5rem; }
+  @media (min-width: 1024px) { .footer-logo { height: 4rem; } }
+  .footer-logo svg { height: 100%; width: auto; }
+  .footer-logo .logo-word { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; }
+  footer h2.cta-title {
+    margin-top: 2rem;
+    max-width: 28rem;
+    font-family: var(--font-display);
+    font-size: 1.875rem;
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  @media (min-width: 1024px) { footer h2.cta-title { font-size: 2.25rem; } }
+  footer .cta-sub { margin-top: 1.25rem; max-width: 26rem; font-size: 0.9rem; line-height: 1.7; opacity: 0.8; }
+  footer .btn-wa.light { margin-top: 2.25rem; }
+
+  .footer-cols { display: grid; gap: 2.5rem; }
+  @media (min-width: 640px) { .footer-cols { grid-template-columns: 1fr 1fr; } }
+  .footer-label { font-family: var(--font-display); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; opacity: 0.6; }
+  .footer-contact { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; font-size: 0.875rem; }
+  .footer-contact li { display: flex; align-items: flex-start; gap: 0.5rem; opacity: 0.85; }
+  .footer-contact li.wa-link { opacity: 1; font-weight: 700; }
+  .footer-contact li.wa-link a { display: inline-flex; align-items: center; gap: 0.5rem; transition: opacity 0.2s ease; }
+  .footer-contact li.wa-link a:hover { opacity: 0.7; }
+  .footer-contact svg { flex-shrink: 0; margin-top: 0.15rem; }
+
+  .footer-nav { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem; }
+  .footer-nav a { opacity: 0.8; transition: opacity 0.2s ease; }
+  .footer-nav a:hover { opacity: 1; }
+
+  .social-row { margin-top: 1.25rem; display: flex; gap: 0.75rem; }
+  .social-row a {
+    display: grid;
+    place-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 999px;
+    border: 1px solid color-mix(in oklch, var(--primary-foreground) 25%, transparent);
+    transition: background-color 0.2s ease;
+  }
+  .social-row a:hover { background: color-mix(in oklch, var(--primary-foreground) 10%, transparent); }
+
+  .footer-bottom {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-top: 1px solid color-mix(in oklch, var(--primary-foreground) 15%, transparent);
+    padding-top: 2rem;
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }
+  @media (min-width: 640px) { .footer-bottom { flex-direction: row; align-items: center; justify-content: space-between; } }
+
+  /* ---------- Floating WhatsApp ---------- */
+  .floating-wa {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 50;
+    display: grid;
+    place-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 999px;
+    background: var(--primary);
+    color: var(--primary-foreground);
+    box-shadow: var(--shadow-soft);
+    transition: background-color 0.2s ease;
+  }
+  .floating-wa:hover { background: var(--primary-deep); }
+  @media (min-width: 640px) { .floating-wa { right: 1.75rem; bottom: 1.75rem; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { transition: none; opacity: 1; transform: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#inicio" aria-label="Silo Flex - início" class="logo-mark">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="40" height="40" rx="10" fill="oklch(0.45 0.105 160)"/>
+        <path d="M13 27V15.5C13 13 15 11 17.5 11H22.5C25 11 27 13 27 15.5V27" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13 21H27" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-word" style="color: var(--primary);">Silo Flex</span>
+    </a>
+
+    <div class="header-right">
+      <nav class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="btn-wa solid sm header-cta" href="https://wa.me/message/MOQ5EHFQZYYMD1" target="_blank" rel="noopener noreferrer">
+        Quero meu orçamento
+      </a>
+
+      <button type="button" class="menu-btn" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg id="iconMenu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        <svg id="iconClose" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn-wa solid md" style="width:100%;" href="https://wa.me/message/MOQ5EHFQZYYMD1" target="_blank" rel="noopener noreferrer">
+      Quero meu orçamento
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="inicio">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Silo Flex — Sacos para Silagem</p>
+        <h1 class="hero-title">
+          Sacos para Silagem com <span class="accent">Resistência</span>, <span class="accent">Segurança</span> e <span class="accent">Qualidade</span>
+        </h1>
+        <p class="lead">Soluções em embalagens para silagem desenvolvidas para proteger seu produto e oferecer segurança durante o armazenamento.</p>
+        <div style="margin-top: 2.5rem;">
+          <a class="btn-wa solid lg" href="https://wa.me/message/MOQ5EHFQZYYMD1" target="_blank" rel="noopener noreferrer">Quero meu orçamento</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <p class="stat-value">180 / 200</p>
+            <p class="stat-label">micra disponíveis</p>
+          </div>
+          <div>
+            <p class="stat-value">100%</p>
+            <p class="stat-label">reciclável (linha verde)</p>
+          </div>
+          <div>
+            <p class="stat-value">50%</p>
+            <p class="stat-label">material virgem (linha branca)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" style="transition-delay:140ms;">
+        <div class="media-frame">
+          <div class="video-16-9">
+            <iframe src="https://www.youtube.com/embed/G7DpToumyII?rel=0&modestbranding=1" title="Vídeo introdutório Silo Flex - Sacos para Silagem" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUTOS ============ -->
+  <section id="produtos" class="section-pad">
+    <div class="wrap">
+      <div class="reveal" style="max-width: 48rem;">
+        <p class="eyebrow">Nossos produtos</p>
+        <h2 class="h2">Duas linhas, a mesma exigência de qualidade</h2>
+      </div>
+
+      <div class="product-list">
+        <!-- Linha Verde -->
+        <div class="reveal product-card">
+          <div class="product-media dark">
+            <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" aria-label="Saco para silagem verde da Silo Flex">
+              <rect x="30" y="20" width="140" height="200" rx="14" fill="oklch(0.62 0.115 168)"/>
+              <rect x="30" y="20" width="140" height="42" rx="14" fill="oklch(0.72 0.11 170)"/>
+              <path d="M30 62 H170" stroke="oklch(0.29 0.075 158)" stroke-width="3"/>
+              <path d="M55 20 V0 M145 20 V0" stroke="oklch(0.29 0.075 158)" stroke-width="6" stroke-linecap="round"/>
+              <text x="100" y="150" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="20" fill="oklch(0.985 0.008 150)">SILO FLEX</text>
+              <text x="100" y="175" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="600" font-size="11" fill="oklch(0.985 0.008 150)" opacity="0.85">LINHA VERDE</text>
+            </svg>
+          </div>
+          <div class="product-body">
+            <p class="eyebrow">Linha Verde</p>
+            <h3>Saco para Silagem Verde</h3>
+            <p class="lead-sm">Produzido com material 100% reciclável, une desempenho no campo e responsabilidade ambiental.</p>
+            <ul class="feature-grid">
+              <li>Material 100% reciclável</li>
+              <li>Alta resistência no manuseio</li>
+              <li>Segurança no armazenamento</li>
+              <li>Disponível em 180 e 200 micra</li>
+            </ul>
+            <a class="btn-wa solid md" href="https://wa.me/message/MOQ5EHFQZYYMD1" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+          </div>
+        </div>
+
+        <!-- Linha Branca -->
+        <div class="reveal product-card" style="transition-delay:100ms;">
+          <div class="product-media light">
+            <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" aria-label="Saco para silagem branco da Silo Flex">
+              <rect x="30" y="20" width="140" height="200" rx="14" fill="oklch(0.985 0.008 150)" stroke="oklch(0.45 0.105 160)" stroke-width="2"/>
+              <rect x="30" y="20" width="140" height="42" rx="14" fill="oklch(0.45 0.105 160)"/>
+              <path d="M55 20 V0 M145 20 V0" stroke="oklch(0.29 0.075 158)" stroke-width="6" stroke-linecap="round"/>
+              <text x="100" y="150" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="20" fill="oklch(0.29 0.075 158)">SILO FLEX</text>
+              <text x="100" y="175" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="600" font-size="11" fill="oklch(0.45 0.105 160)">LINHA BRANCA</text>
+            </svg>
+          </div>
+          <div class="product-body">
+            <p class="eyebrow">Linha Branca</p>
+            <h3>Saco para Silagem Branco</h3>
+            <p class="lead-sm">Composição com 50% de material virgem, garantindo estrutura reforçada para a silagem.</p>
+            <ul class="feature-grid">
+              <li>50% de material virgem</li>
+              <li>Alta resistência no manuseio</li>
+              <li>Segurança no armazenamento</li>
+              <li>Disponível em 180 e 200 micra</li>
+            </ul>
+            <a class="btn-wa solid md" href="https://wa.me/message/MOQ5EHFQZYYMD1" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section id="sobre" class="section-pad">
+    <div class="wrap about-grid">
+      <div class="reveal about-media">
+        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Proprietário da Silo Flex ao lado do estoque de sacos para silagem">
+          <rect width="400" height="500" fill="var(--surface)"/>
+          <rect x="0" y="320" width="400" height="180" fill="oklch(0.955 0.018 158)"/>
+          <circle cx="200" cy="210" r="70" fill="oklch(0.45 0.105 160)" opacity="0.15"/>
+          <circle cx="200" cy="185" r="42" fill="oklch(0.45 0.105 160)"/>
+          <path d="M120 340 C120 270 160 235 200 235 C240 235 280 270 280 340 V360 H120 Z" fill="oklch(0.29 0.075 158)"/>
+          <rect x="40" y="360" width="70" height="90" rx="6" fill="oklch(0.62 0.115 168)"/>
+          <rect x="290" y="370" width="70" height="80" rx="6" fill="oklch(0.62 0.115 168)"/>
+          <rect x="120" y="400" width="60" height="50" rx="6" fill="oklch(0.985 0.008 150)" stroke="oklch(0.45 0.105 160)" stroke-width="2"/>
+          <rect x="220" y="400" width="60" height="50" rx="6" fill="oklch(0.985 0.008 150)" stroke="oklch(0.45 0.105 160)" stroke-width="2"/>
+        </svg>
+      </div>
+
+      <div class="reveal about-copy" style="transition-delay:120ms;">
+        <p class="eyebrow">Sobre nós</p>
+        <h2 class="h2">Qualidade que acompanha a produção</h2>
+        <div class="lead">
+          <p>A Silo Flex é especializada em sacos para silagem. Trabalhamos com embalagens preparadas para a rotina do campo, com foco em resistência, segurança e qualidade no armazenamento da produção.</p>
+          <p>Nossas linhas verde e branca estão disponíveis em 180 e 200 micra, permitindo que cada produtor escolha a solução ideal para a sua operação. O atendimento é direto, feito por quem conhece o produto e entende a necessidade de quem trabalha com silagem todos os dias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIFERENCIAIS ============ -->
+  <section id="diferenciais" class="surface section-pad">
+    <div class="wrap">
+      <div class="reveal" style="max-width: 48rem;">
+        <p class="eyebrow">Por que escolher a Silo Flex</p>
+        <h2 class="h2">Mais segurança para a sua silagem</h2>
+      </div>
+
+      <div class="diff-grid">
+        <div class="reveal diff-card">
+          <p class="num">01</p>
+          <h3>Resistência</h3>
+          <p>Embalagens preparadas para suportar o manuseio, o transporte e o armazenamento da silagem.</p>
+        </div>
+        <div class="reveal diff-card" style="transition-delay:110ms;">
+          <p class="num">02</p>
+          <h3>Segurança</h3>
+          <p>Proteção da produção durante todo o período de armazenamento, do enchimento ao consumo.</p>
+        </div>
+        <div class="reveal diff-card" style="transition-delay:220ms;">
+          <p class="num">03</p>
+          <h3>Qualidade</h3>
+          <p>Padrão consistente em todas as entregas, com atendimento direto e especializado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SUSTENTABILIDADE ============ -->
+  <section id="sustentabilidade" class="section-pad">
+    <div class="wrap sus-grid">
+      <div class="reveal">
+        <p class="eyebrow">Sustentabilidade</p>
+        <h2 class="h2">Resistência que também pensa no futuro</h2>
+        <p class="lead">A linha verde da Silo Flex é produzida com material 100% reciclável, unindo o desempenho exigido no campo a uma escolha mais responsável para a sua propriedade.</p>
+        <p class="sus-highlight">Material 100% reciclável</p>
+      </div>
+
+      <div class="reveal sus-media" style="transition-delay:130ms;">
+        <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" aria-label="Saco para silagem verde 100% reciclável da Silo Flex">
+          <rect x="30" y="20" width="140" height="200" rx="14" fill="oklch(0.62 0.115 168)"/>
+          <rect x="30" y="20" width="140" height="42" rx="14" fill="oklch(0.72 0.11 170)"/>
+          <path d="M30 62 H170" stroke="oklch(0.24 0.045 158)" stroke-width="3"/>
+          <path d="M55 20 V0 M145 20 V0" stroke="oklch(0.24 0.045 158)" stroke-width="6" stroke-linecap="round"/>
+          <text x="100" y="150" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="20" fill="oklch(0.16 0.03 158)">SILO FLEX</text>
+          <text x="100" y="175" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="600" font-size="11" fill="oklch(0.16 0.03 158)" opacity="0.85">100% RECICLÁVEL</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APLICAÇÃO ============ -->
+  <section class="section-pad">
+    <div class="wrap">
+      <div class="reveal" style="max-width: 48rem;">
+        <p class="eyebrow">Aplicação real</p>
+        <h2 class="h2">Da produção ao armazenamento</h2>
+      </div>
+
+      <div class="reveal app-media" style="transition-delay:110ms;">
+        <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sacos para silagem Silo Flex armazenados em propriedade rural">
+          <rect width="640" height="360" fill="oklch(0.86 0.05 165)"/>
+          <rect y="230" width="640" height="130" fill="oklch(0.66 0.065 145)"/>
+          <rect y="0" width="640" height="230" fill="oklch(0.88 0.03 210)"/>
+          <circle cx="530" cy="70" r="46" fill="oklch(0.92 0.09 95)"/>
+          <g>
+            <rect x="60" y="200" width="90" height="130" rx="8" fill="oklch(0.62 0.115 168)"/>
+            <rect x="160" y="215" width="90" height="115" rx="8" fill="oklch(0.45 0.105 160)"/>
+            <rect x="260" y="195" width="90" height="135" rx="8" fill="oklch(0.62 0.115 168)"/>
+            <rect x="360" y="220" width="90" height="110" rx="8" fill="oklch(0.985 0.008 150)" stroke="oklch(0.45 0.105 160)" stroke-width="3"/>
+            <rect x="460" y="205" width="90" height="125" rx="8" fill="oklch(0.45 0.105 160)"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="reveal app-cta" style="transition-delay:160ms;">
+        <p>Precisa de sacos para silagem? Fale diretamente com a Silo Flex.</p>
+        <a class="btn-wa solid lg" href="https://wa.me/message/MOQ5EHFQZYYMD1" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contato">
+  <div class="wrap footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="40" height="40" rx="10" fill="rgba(255,255,255,0.12)"/>
+            <path d="M13 27V15.5C13 13 15 11 17.5 11H22.5C25 11 27 13 27 15.5V27" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13 21H27" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-word">Silo Flex</span>
+        </div>
+        <h2 class="cta-title">Solicite seu orçamento pelo WhatsApp</h2>
+        <p class="cta-sub">Atendimento direto e especializado com quem entende de silagem.</p>
+        <a class="btn-wa light lg" href="https://wa.me/message/MOQ5EHFQZYYMD1" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Quero meu orçamento
+        </a>
+      </div>
+
+      <div class="footer-cols">
+        <div>
+          <p class="footer-label">Contato</p>
+          <ul class="footer-contact">
+            <li class="wa-link">
+              <a href="https://wa.me/message/MOQ5EHFQZYYMD1" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                (44) 99174-8250
+              </a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>
+                <span style="display:block;">Rua Nicolas Sarri, 301</span>
+                <span style="display:block;">Paiçandu - PR</span>
+                <span style="display:block;">87140-000</span>
+              </span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Segunda a sexta, das 08h às 18h</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-label">Navegação</p>
+          <nav class="footer-nav">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#contato">Contato</a>
+          </nav>
+
+          <p class="footer-label" style="margin-top: 2.5rem;">Redes sociais</p>
+          <div class="social-row">
+            <a href="https://www.instagram.com/siloflex2023?igsh=MTdkeHgxOW52dXk5ag==" target="_blank" rel="noopener noreferrer" aria-label="Instagram @siloflex2023">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/share/1Dea1LrXkq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook Silo Flex">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Silo Flex - Sacos para Silagem — CNPJ 53.478.054/0001-23</p>
+      <p>Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a class="floating-wa" href="https://wa.me/message/MOQ5EHFQZYYMD1" target="_blank" rel="noopener noreferrer" aria-label="Falar com a Silo Flex no WhatsApp">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</a>
+
+<script>
+  // Header shadow on scroll
+  var header = document.getElementById('siteHeader');
+  function onScroll() {
+    if (window.scrollY > 16) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Mobile menu toggle
+  var menuToggle = document.getElementById('menuToggle');
+  var mobileNav = document.getElementById('mobileNav');
+  var iconMenu = document.getElementById('iconMenu');
+  var iconClose = document.getElementById('iconClose');
+  menuToggle.addEventListener('click', function () {
+    var isOpen = mobileNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+    iconMenu.style.display = isOpen ? 'none' : 'block';
+    iconClose.style.display = isOpen ? 'block' : 'none';
+  });
+  mobileNav.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      mobileNav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      iconMenu.style.display = 'block';
+      iconClose.style.display = 'none';
+    });
+  });
+
+  // Reveal on scroll
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('shown');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
+    );
+    revealEls.forEach(function (el) { observer.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('shown'); });
+  }
+</script>
+
+</body>
+</html>
